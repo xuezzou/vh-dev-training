@@ -1,0 +1,25 @@
+{
+  "name": "vh-dev-training",
+  "version": "1.0.0",
+  "description": "Training for VH dev members",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "week1": "parcel week1/meeting/index.html",
+    "hw": "tsc week1/hw/hw.ts",
+    "hw-dev": "ts-node week1/hw/hw.ts",
+    "lint": "echo \"Smh you have to write this\" "
+  },
+  "author": "VandyHacks",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "dependencies": {
+    "koa": "^2.7.0",
+    "koa-router": "^7.4.0",
+    "parcel-bundler": "^1.12.3",
+    "typescript": "^3.3.4000"
+  },
+  "devDependencies": {
+    "prettier": "^1.16.4",
+    "ts-node": "^8.0.3"
+  }
+}
