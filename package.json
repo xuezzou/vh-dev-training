@@ -5,7 +5,9 @@
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"week1": "ts-node week1/meeting/fun.js",
+		"week1": "if [ -f week1/meeting/fun.js ]; then npm run week1:js; else npm run week1:ts; fi",
+		"week1:js": "node week1/meeting/fun.js",
+		"week1:ts": "ts-node week1/meeting/fun.ts",
 		"hw": "tsc week1/hw/hw.ts",
 		"hw-dev": "ts-node week1/hw/hw.ts",
 		"lint": "eslint -c .eslintrc.js --ext .js,.ts week1/"
