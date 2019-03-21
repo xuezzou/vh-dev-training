@@ -52,6 +52,14 @@ let c = false;
 // 	console.log(param1 + param2);
 // };
 
+// // here's a quick example of a neat thing you can do with function in javascript. This is called a callback!
+
+// const ola = (param, func) => {
+// 	func(param, 7); // expecting two parameters
+// };
+
+// ola(2, ciao);
+
 // // there's also switch statements, imports/exports and all the usual stuff. We'll worry about that stuff later.
 
 // if (a == 5) {
