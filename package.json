@@ -11,6 +11,10 @@
 		"lint": "eslint -c .eslintrc.js --ext .js,.ts week1/"
 	},
 	"author": "VandyHacks",
+	"contributors": [
+		"Benjamin Cooper <bencooper222@gmail.com> (https://benc.io)",
+		"Irfaan Khalid <irfaan.khalid@vanderbilt.edu> (https://irfaan.me)"
+	],
 	"license": "SEE LICENSE IN LICENSE.md",
 	"dependencies": {
 		"koa": "^2.7.0",
