@@ -4,6 +4,11 @@
 
 // unique js things everything is an object, function callbacks etc
 
-// quick think on fetch() with the weather api.
+// quick thing on fetch() with the weather api.
 
 // now a case that brings up why ts is necessary.
+
+console.log(2 == '3');
+
+const obj = { hello: 2 };
+console.log(obj.hello);

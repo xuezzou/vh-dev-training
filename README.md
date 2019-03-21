@@ -42,4 +42,5 @@ If both work, cd into this repo's directory (again, contact on Slack if you don'
 ## Deploy it
 
 Do this for your first homework. We'll give instructions associated with each homework for how to deploy. I strongly recommend not hitting the button until _after_ your code works. After hitting the button, you'll have to create an account and then Heroku will walk you through it.
+
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
