@@ -39,6 +39,10 @@ I assume you understand terminal well enough to do the right thing: [https://nod
 Type in `node -v` into terminal. You should get a version number. Do the same thing with npm: `npm -v`. Post in channel if either don't work.
 If both work, cd into this repo's directory (again, contact on Slack if you don't know how to do this) and type in "npm i". **It will take a long time. That is normal. Just don't close the terminal**.
 
+## Other stuff
+
+I have tried to replicate the linting and Typescript configs for Vaken as closely as possible. I strongly suggest you install the recommended extensions - they provide a lot of helpful context.
+
 ## Deploy it
 
 Do this for your first homework. We'll give instructions associated with each homework for how to deploy. I strongly recommend not hitting the button until _after_ your code works. After hitting the button, you'll have to create an account and then Heroku will walk you through it.
