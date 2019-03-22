@@ -1,5 +1,5 @@
 {
-  "compilerOptions": {
-    "outFile": "hw.js"
-  }
+	"compilerOptions": {
+		"module": "system"
+	}
 }
