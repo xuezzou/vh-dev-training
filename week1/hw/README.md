@@ -20,7 +20,7 @@ We mentioned in class that everything is an object. Let's explore what that mean
 
 1. If `console.log` is a function and everything is an object... does that mean that `console` itself is an object? Try logging `console` and describing what that outputs.
 
-@response:
+`@response`:
 
 We didn't really explore how to declare and access objects in class. That's because the syntax is quite simple:
 
@@ -45,7 +45,7 @@ const prezPlaces = {[momAndDad[0]]: "Nashville",[momAndDad[1]]: "Dublin" };
 
 2. Take a look at at the `whatAmI`. It's created like an object with the {} on the outside. But, if you were to access its values, you would do something like: `whatAmI[0]`... which is exactly like an array! So, what do you think the difference is between `whatAmI` and an actual array [created normally](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array?)?
 
-@response:
+`@response`:
 (We'll take a look at an important distinction in the last section)
 
 1. Let's take a look at an actual object. Go to [this](https://spot.benc.me/?time=1549939921) site. That's the #hackerspotted results from the week of Feb 12 (note: both Firefox and Chrome have great extensions called JSONView that will help read this. Alternatively, you can go to [jsonlint.com](https://jsonlint.com/), paste it and "validate JSON" to make it readable.). A few questions:
@@ -78,7 +78,7 @@ arr.forEach(el => console.log(el));
 [1, 2, 3].map(el => el ** 0.5); // creates an array of the square root of each number
 ```
 
-3. There's an easy way to check if you did part 1 correctly. We can sum up all the values in `docTesterIndex`. On average, we should get around 549,000. This is really easy to do with a for loop... but there's a better way: Array.reduce. Using MDN's documentation and this example, use Array.reduce to sum up `docTesterIndex`.
+3. There's an easy way to check if you did part 1 correctly. We can sum up all the values in `docTesterIndex`. On average, we should get around 549,000. This is really easy to do with a for loop... but there's a better way: Array.reduce. Using [MDN](https://developer.mozilla.org/en-US/)'s documentation and this example, use Array.reduce to sum up `docTesterIndex`.
 
 ```ts
 const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
