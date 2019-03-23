@@ -20,7 +20,7 @@ We mentioned in class that everything is an object. Let's explore what that mean
 
 1. If `console.log` is a function and everything is an object... does that mean that `console` itself is an object? Try logging `console` and describing what that outputs.
 
-`@response`:
+`@response:`
 
 We didn't really explore how to declare and access objects in class. That's because the syntax is quite simple:
 
@@ -45,14 +45,14 @@ const prezPlaces = {[momAndDad[0]]: "Nashville",[momAndDad[1]]: "Dublin" };
 
 2. Take a look at at the `whatAmI`. It's created like an object with the {} on the outside. But, if you were to access its values, you would do something like: `whatAmI[0]`... which is exactly like an array! So, what do you think the difference is between `whatAmI` and an actual array [created normally](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array?)?
 
-`@response`:
+`@response:`
 (We'll take a look at an important distinction in the last section)
 
 1. Let's take a look at an actual object. Go to [this](https://spot.benc.me/?time=1549939921) site. That's the #hackerspotted results from the week of Feb 12 (note: both Firefox and Chrome have great extensions called JSONView that will help read this. Alternatively, you can go to [jsonlint.com](https://jsonlint.com/), paste it and "validate JSON" to make it readable.). A few questions:
 
    1. If you had to say what this "was", what would you say? Is it an array? Is it an object? If it is an array, what is the type of elements? If it's an object, what is the type of the values?
 
-   @response:
+   `@response:`
 
    2. Let's play with it in code. I've already written code that will grab it from the server. Take a couple minutes and just explore it. Pick a person (maybe yourself) and try to get the code to print out just the data for that person. You don't have to turn in the code that does that.
    3. Write code that given a number, `n` (so define a variable `n` that can easily be changed) will return the `n`th highest person _by unique spots_ (note that it's sorted by score), using score as a tiebreaker. For example, if `n=3`, you should return the object with the person of id "U9CT31PCG" (I'm omitting their name from here for privacy reasons). Return that person's object.
