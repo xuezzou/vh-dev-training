@@ -100,7 +100,7 @@ arr.map(el => el + ++i).reduce((acc, el) => (acc *= el), 1);
 
 ## Finishing up
 
-To run the Typescript file, `npm run hw-dev` is the way to go. You should also see something in the bottom left that looks like this ![npm script viewer](https://shared.benc.io/screencaps/2019/03/5382b84d-7149-43c6-8e46-a2ae3f3f4e9b.png). You can run any npm script by clicking the "play" button on each.
+To run the Typescript file, `npm run hw-dev` is the way to go. You should also see something in the bottom left that looks like this ![alt text](https://shared.benc.io/screencaps/2019/03/5382b84d-7149-43c6-8e46-a2ae3f3f4e9b.png 'npm script viewer'). You can run any npm script by clicking the "play" button on each.
 
 Before submitting, you should
 
