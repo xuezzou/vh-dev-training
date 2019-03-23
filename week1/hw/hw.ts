@@ -4,7 +4,7 @@ import fetch from 'node-fetch';
 // 1st, your function must have the keyword "async" before the parameters
 // 2nd when you call it, you must preface it with "await"
 // like this: await getDataFromAPI(url)
-const getDataFromAPI = url =>
+const getDataFromAPI = (url: string) =>
 	new Promise((res, rej) => {
 		fetch(url)
 			.then(data => data.json())
@@ -15,6 +15,10 @@ const getDataFromAPI = url =>
 			.catch(err => rej(err));
 	});
 
+(async () => {
+	console.log(await getDataFromAPI('https://spot.benc.me/?time=1549939921')); // sample call - delete before you submit
+})();
+
 // write your homework here
 
 // put all this in your "objectively" function after you make it
@@ -24,4 +28,4 @@ const whatAmI = { 0: 'A', 1: 'B', 2: 'C', 3: 'D' };
 const docTester = [];
 // fill docTester with 1000 random integers between 0 and 99
 for (let i = 0; i < 1000; i++) docTester[i] = Math.floor(Math.random() * 100);
-console.log(docTester);
+// console.log(docTester); // uncomment this to see the array logged

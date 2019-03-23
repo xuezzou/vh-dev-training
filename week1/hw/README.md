@@ -18,7 +18,7 @@ In some cases, you'll be asked to give a text answer in this document. Places li
 
 We mentioned in class that everything is an object. Let's explore what that means.
 
-1. If `console.log` is a function and everything is an object... does that mean that `console` itself is an object? Try logging `console` and describing what that outputs.
+1. If `console.log` is a function and everything is an object... does that mean that `console` itself is an object? Try logging `console` and describing what that outputs. Anything interesting?
 
 @response:
 
@@ -54,8 +54,8 @@ const prezPlaces = {[momAndDad[0]]: "Nashville",[momAndDad[1]]: "Dublin" };
 
    @response:
 
-   2. Let's play with it in code. I've already written code that will grab it from the server. Take a couple minutes and just explore it. Pick a person (maybe yourself) and try to get the code to print out just the data for that person. You don't have to turn in the code that does that.
-   3. Write code that given a number, `n` (so define a variable `n` that can easily be changed) will return the `n`th highest person _by unique spots_ (note that it's sorted by score), using score as a tiebreaker. For example, if `n=3`, you should return the object with the person of id "U9CT31PCG" (I'm omitting their name from here for privacy reasons). Return that person's object.
+   2. Let's play with it in code. I've already written code that will grab it from the server (you just need to fill in the URL for `getDataFromAPI`). Take a couple minutes and just explore it. Pick a person (maybe yourself) and try to get the code to print out just the data for that person. You don't have to turn in the code that does that.
+   3. Write code that given a number, `n` (so define a variable `n` that can easily be changed) will return the `n`th highest person _by unique spots_ (note that they array is currently sorted by score), using score as a tiebreaker. For example, if `n=3`, you should return the object with the person of id "U9CT31PCG" (I'm omitting their name from here for privacy reasons). Return that person's object.
 
 ## Awry Arrays (awry)
 
@@ -78,7 +78,7 @@ arr.forEach(el => console.log(el));
 [1, 2, 3].map(el => el ** 0.5); // creates an array of the square root of each number
 ```
 
-3. There's an easy way to check if you did part 1 correctly. We can sum up all the values in `docTesterIndex`. On average, we should get around 549,000. This is really easy to do with a for loop... but there's a better way: Array.reduce. Using MDN's documentation and this example, use Array.reduce to sum up `docTesterIndex`.
+1. There's an easy way to check if you did part 1 correctly. We can sum up all the values in `docTesterIndex`. On average, we should get around 549,000. This is easyish to do with a for loop... but there's a better way: Array.reduce. Using MDN's documentation and this example, use Array.reduce to sum up `docTesterIndex`.
 
 ```ts
 const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
