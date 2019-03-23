@@ -1,9 +1,9 @@
 import fetch from 'node-fetch';
 
 // to call this function, you'll need to do two things
-// 1st, your function must have the keyword "async" before the parameters
+// 1st, the function that is called in must have the keyword "async" before the parameters
 // 2nd when you call it, you must preface it with "await"
-// like this: await getDataFromAPI(url)
+// like in the below example
 const getDataFromAPI = (url: string) =>
 	new Promise((res, rej) => {
 		fetch(url)
@@ -15,6 +15,9 @@ const getDataFromAPI = (url: string) =>
 			.catch(err => rej(err));
 	});
 
+// all these parantheses and braces creates and instantly calls a function.
+//This is known as an Instantly Invoked Function Expression (IIFE).
+// It has a lot of uses but in this case, since await can only be used in async functions, it's needed
 (async () => {
 	console.log(await getDataFromAPI('https://spot.benc.me/?time=1549939921')); // sample call - delete before you submit
 })();
