@@ -97,3 +97,15 @@ arr.map(el => el + ++i).reduce((acc, el) => (acc *= el), 1);
 ```
 
 3. Let's try something neat. Using `Array.sort` and `Array.filter` (not necessarily in that order), redo the last problem from the object section except this time, only count people who are spotted 3 times, more than 3 times or 0 times.
+
+## Finishing up
+
+To run the Typescript file, `npm run hw-dev` is the way to go. You should also see something in the bottom left that looks like this ![npm script viewer](https://shared.benc.io/screencaps/2019/03/5382b84d-7149-43c6-8e46-a2ae3f3f4e9b.png). You can run any npm script by clicking the "play" button on each.
+
+Before submitting, you should
+
+1. `npm run lint`. If it returns any errors or warnings, you should fix before submitting. Some errors/warnings can be fixed with `npm run lint:fix`. Others will require manual intervention.
+2. `npm run hw`. This should run without errors and create a js file called `hw.js`. Test this file by running it with `node` like we did early during the meeting. It should have the same result as your Typescript file being run.
+3. Answer this question: what do you notice that the Typescript transpiler did to your code? How did it transform it?
+
+@response:
