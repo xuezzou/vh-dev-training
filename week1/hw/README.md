@@ -21,6 +21,7 @@ We mentioned in class that everything is an object. Let's explore what that mean
 1. If `console.log` is a function and everything is an object... does that mean that `console` itself is an object? Try logging `console` and describing what that outputs. Anything interesting?
 
 `@response:`
+console is itself a global object that provides access to the browser's debugging mode. Logging console directly gives us its fields, which includes the function `log` and other functions like `assert`, `clear`, etc. One thing interesting is that just like a normal object,we may delete or redefine the console. For instance, `console = 3` would overwrite the existing console object. Similarly, we can also reassign console to another variable and treat it same as console, like `let anotherConsole = console;`
 
 We didn't really explore how to declare and access objects in class. That's because the syntax is quite simple:
 
@@ -46,12 +47,14 @@ const prezPlaces = {[momAndDad[0]]: "Nashville",[momAndDad[1]]: "Dublin" };
 2. Take a look at at the `whatAmI`. It's created like an object with the {} on the outside. But, if you were to access its values, you would do something like: `whatAmI[0]`... which is exactly like an array! So, what do you think the difference is between `whatAmI` and an actual array [created normally](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array?)?
 
 `@response:`
+Arrays are essentially a special type of object, though array also supports additional function libraries such as `indexOf` `forEach` `length` etc. `Object.keys()` for `whatAmI` and a normally created array both yields the same value `["0", "1", "2"]`. Underneath the surface when an array tries to get an index, it does the exactly same thing as an object. It takes the index, hashes it and retrieves the value. We can also perform `arr.hasOwnPreperty(key)` on a normal array or perform `arr.a = 7` on a normal array just like what we would do on an object. 
 
 3. Let's take a look at an actual object. Go to [this](https://spot.benc.me/?time=1549939921) site. That's the #hackerspotted results from the week of Feb 12 (note: both Firefox and Chrome have great extensions called JSONView that will help read this. Alternatively, you can go to [jsonlint.com](https://jsonlint.com/), paste it and "validate JSON" to make it readable.). A few questions:
 
    1. If you had to say what this "was", what would you say? Is it an array? Is it an object? If it is an array, what is the type of elements? If it's an object, what is the type of the values?
 
    `@response:`
+   This is an array of json objects. It is an array of objects that has strings as keys and strings or numbers as values. 
 
    1. Let's play with it in code. I've already written code that will grab it from the server (you just need to fill in the URL for `getDataFromAPI`). Take a couple minutes and just explore it. Pick a person (maybe yourself) and try to get the code to print out just the data for that person. You don't have to turn in the code that does that.
    2. Write code that given a number, `n` (so define a variable `n` that can easily be changed) will return the `n`th highest person _by unique spots_ (note that they array is currently sorted by score), using score as a tiebreaker. For example, if `n=3`, you should return the object with the person of id "U9CT31PCG" (I'm omitting their name from here for privacy reasons). Return that person's object.
@@ -107,4 +110,6 @@ Before submitting, you should
 2. `npm run hw`. This should run without errors and create a js file called `hw.js`. Test this file by running it with `node` like we did early during the meeting. It should have the same result as your Typescript file being run.
 3. Answer this question: what do you notice that the Typescript transpiler did to your code? How did it transform it?
 
-@response:
+`@response:`
+For the array part, the js file does not contain much differences than the ts file. However, the upper part which involves asynchrony becomes unintuitive and hard to follow. The transpiled contains a lot of switches and generator. It also transforms `let` keyword back to `var`.
+
