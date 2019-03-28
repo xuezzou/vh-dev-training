@@ -55,7 +55,7 @@ const awry = async (): Promise<void> => {
 	console.log(`Error is ${549000 - docTesterIndex.reduce((acc, el) => acc + el, 0)}`);
 
 	const getNthHighestByUniqueSpotsFiltered = async (n: number): Promise<SpotPerson> =>
-		((await getDataFromAPI('https://spot.benc.me/?time=1549939921')) as [SpotPerson])
+		(await getDataFromAPI('https://spot.benc.me/?time=1549939921'))
 			.filter(el => el.spotted === 0 || el.spotted >= 3)
 			.sort((a, b) => b.unique - a.unique)[n - 1];
 };
