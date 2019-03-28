@@ -3,7 +3,7 @@
 import fetch from 'node-fetch';
 
 // we didn't mention this yet but this lets us declare types for the whole file
-interface SpotPerson {
+export interface SpotPerson {
 	name: string;
 	score: number;
 	spots: number;
@@ -17,7 +17,7 @@ interface SpotPerson {
 // 1st, the function that is called in must have the keyword "async" before the parameters
 // 2nd when you call it, you must preface it with "await"
 // like in the below example
-const getDataFromAPI = (url: string): Promise<[SpotPerson]> =>
+export const getDataFromAPI = (url: string): Promise<SpotPerson[]> =>
 	new Promise((res, rej) => {
 		fetch(url)
 			.then(data => data.json())
@@ -61,8 +61,8 @@ const awry = async (): Promise<void> => {
 };
 
 (async () => {
-	objectively();
-	awry();
+	// objectively();
+	// awry();
 })();
 // write your homework here
 
