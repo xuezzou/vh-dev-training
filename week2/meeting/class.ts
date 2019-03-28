@@ -16,4 +16,6 @@ const getDataFromAPI = (url: string) =>
 	const data = await getDataFromAPI('https://spot.benc.me/?time=1549939921');
 	console.log(data); // cool, anything can be logged
 	data.filter(el => el.unique > 1); // ruh roh
+
+	// let's write the interface for https://nominatim.openstreetmap.org/search?q=Vanderbilt%20University&format=json
 })();
