@@ -17,7 +17,7 @@ interface SpotPerson {
 // 1st, the function that is called in must have the keyword "async" before the parameters
 // 2nd when you call it, you must preface it with "await"
 // like in the below example
-const getDataFromAPI = (url: string): Promise<object[]> =>
+const getDataFromAPI = (url: string): Promise<[SpotPerson]> =>
 	new Promise((res, rej) => {
 		fetch(url)
 			.then(data => data.json())
@@ -32,7 +32,7 @@ const objectively = async (): Promise<void> => {
 	// neither method is called
 	const q1 = (): void => console.log(console);
 	const getNthHighestByUniqueSpots = async (n: number): Promise<SpotPerson> =>
-		((await getDataFromAPI('https://spot.benc.me/?time=1549939921')) as [SpotPerson]).sort(
+		(await getDataFromAPI('https://spot.benc.me/?time=1549939921')).sort(
 			// this is unecessarily succinct - see if you can figure out what I'm doing
 			(a, b) => b.unique - a.unique
 		)[n - 1];
