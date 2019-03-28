@@ -1,3 +1,4 @@
+/* eslint-disable */ // just to prevent it from annoying us forever
 import fetch from 'node-fetch';
 
 // to call this function, you'll need to do two things
@@ -16,7 +17,7 @@ const getDataFromAPI = (url: string) =>
 	});
 
 // all these parantheses and braces creates and instantly calls a function.
-//This is known as an Instantly Invoked Function Expression (IIFE).
+// This is known as an Instantly Invoked Function Expression (IIFE).
 // It has a lot of uses but in this case, since await can only be used in async functions, it's needed
 (async () => {
 	console.log(await getDataFromAPI('https://spot.benc.me/?time=1549939921')); // sample call - delete before you submit
