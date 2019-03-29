@@ -53,7 +53,7 @@ Finally, install the `sha1` module from npm (and any needed typings files). Impo
 console.log(JSON.stringify(slackApiJson.sha1) === sha1(data)); // should print true
 ```
 
-### Callbacks
+### Specific Callbacks Instructions/Tips
 
 Note that the "body" parameter in the callback contains the JSON returned each time. It's a string for ??? reasons so you might have to add `body = JSON.parse(body)` to get it to properly work. You can us the `|` operator with the types to get that to work, i.e.:
 
