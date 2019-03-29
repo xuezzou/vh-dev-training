@@ -37,7 +37,7 @@ const rtn = `It's ${json.currently.summary} and it's ${json.currently.temperatur
 
 NOTE: I get 1000 free API calls from the Dark Sky API. That should definitely be enough, provided no one abusively queries it. Please don't do that.
 
-Now, go to your name under the direct message column in Slack and copy the string from the URL that's between "messages/" and "/details/", do not copy either of the slashes. Then, make a request to:
+Then, make a request to:
 
 ```ts
 // data matches the interface of WeatherUpdate
