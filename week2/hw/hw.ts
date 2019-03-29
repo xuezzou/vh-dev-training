@@ -26,7 +26,7 @@ const callbacks = (
 	);
 };
 
-// change Promise<object> to Promise<TheTypeThatYou'reMaking>
+// change Promise<object> to Promise<TheTypeThatYouAreMaking> for both functions
 const promises = (location: string, slackUsername: string): Promise<object> => {
 	// use fetch
 };
@@ -37,7 +37,7 @@ export const asyncAwait = async (location: string, slackUsername: string): Promi
 // all the console.logs should log what the send-to-slack API returns
 callbacks('Vanderbilt University', 'YOUR_SLACK_USER_ID', body => {
 	console.log(body);
-}); // feel freeo th change the place
+}); // feel free to change the place. It'll be more interesting if everyone's not doing the same place.
 promises('Vanderbilt University', 'D44FTVCHJ').then(data => console.log(data));
 
 (async () => {
