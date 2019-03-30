@@ -1,4 +1,4 @@
-const request = require('request'); // I hate myself everytime I type this
+import request, { Response } from 'request'; // I hate myself everytime I type this
 require('dotenv').config();
 interface WeatherUpdate {
 	location: string; // i.e. "Vanderbilt University"
@@ -16,7 +16,7 @@ const callbacks = (
 	request(
 		// this is just the first call to request. You'll need multiple
 		'YOUR_URL',
-		(error, _response, body) => {
+		(error: Error, response: Response, body: object): void => {
 			if (error) {
 				console.log(error);
 			} else {
