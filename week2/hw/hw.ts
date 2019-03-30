@@ -1,4 +1,4 @@
-import request = require('request'); // I hate myself everytime I type this
+const request = require('request'); // I hate myself everytime I type this
 require('dotenv').config();
 interface WeatherUpdate {
 	location: string; // i.e. "Vanderbilt University"
@@ -30,7 +30,7 @@ const callbacks = (
 const promises = (location: string, slackUsername: string): Promise<object> => {
 	// use fetch
 };
-export const asyncAwait = async (location: string, slackUsername: string): Promise<Object> => {
+export const asyncAwait = async (location: string, slackUsername: string): Promise<object> => {
 	// use fetch
 };
 
