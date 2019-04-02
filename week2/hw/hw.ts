@@ -1,4 +1,5 @@
-import request, { Response } from 'request'; // I hate myself everytime I type this
+const request = require('request');
+import { Response } from 'request'; // I hate myself everytime I type this
 require('dotenv').config();
 interface WeatherUpdate {
 	location: string; // i.e. "Vanderbilt University"
