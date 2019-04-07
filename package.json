@@ -21,6 +21,7 @@
 	"license": "SEE LICENSE IN LICENSE.md",
 	"dependencies": {
 		"koa": "^2.7.0",
+		"koa-passport": "^4.1.1",
 		"koa-router": "^7.4.0",
 		"node-fetch": "^2.3.0",
 		"parcel-bundler": "^1.12.3",
