@@ -19,10 +19,14 @@ Here are the tools we'll be using to complete this assignment:
 - [Passport.js](http://www.passportjs.org) to make user SSO really simple
 - [Google Drive REST API](https://developers.google.com/drive/api/v3/about-sdk) to interact with Google Drive
 
-## Task 1: Do the Whip
+## Task 1: Launching a Server
 
-## Task 2: Do the Nae-Nae
+`index.ts`
 
-## Task 3: Bring it Aroouuuuund Town
+## Task 2: Routing Users
 
-## Task 4: Break it Down Now, Y'all
+`UserRouter.ts`
+
+## Task 3: Building a Frontend
+
+`react shit`
