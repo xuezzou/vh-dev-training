@@ -4,7 +4,11 @@
 
 This week, your goal is to create a React application that allows a user to log in via Google SSO [(learn more about SSO, or _single sign-on_)](https://blog.capterra.com/single-sign-on/) and then displays all of the user's Google Drive files.
 
+Many of the concepts here are _very_ similar to what Vaken does, especially with regards to handling users on the server, authenticating users via SSO, and rendering user data on the frontend. As such, this assignment is a great way for us to begin introducing you to what Vaken is and does.
+
 To accomplish this, it helps to consider the different parts of what your code needs to look like. You need a React component to display some sort of login button to the user, Koa functionality to log a user in via Google SSO once that button is clicked, some more Koa functionality to retrieve the user's Google Drive files, and another React component to display those files in a nice format.
+
+## Helpful Tools
 
 Here are the tools we'll be using to complete this assignment:
 
