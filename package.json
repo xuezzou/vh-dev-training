@@ -10,8 +10,8 @@
 		"week3:react": "parcel week3/meeting/react/index.html",
 		"hw": "tsc week2/hw/server.ts && node week2/hw/server.js",
 		"hw-dev": "ts-node week2/hw/hw.ts",
-		"lint": "eslint -c .eslintrc.js --ext .ts week1/ week2/",
-		"lint:fix": "eslint -c .eslintrc.js --ext .ts week1/ week2/ --fix"
+		"lint": "eslint -c .eslintrc.js --ext .ts week1/ week2/ week3/",
+		"lint:fix": "eslint -c .eslintrc.js --ext .ts week1/ week2/ week3/ --fix"
 	},
 	"author": "VandyHacks",
 	"contributors": [
