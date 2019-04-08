@@ -20,10 +20,11 @@ Here are the tools we'll be using to complete this assignment:
 - [Google Drive REST API](https://developers.google.com/drive/api/v3/about-sdk) to interact with Google Drive
 
 ## Task 1: Launching a Server
+This first task only requires writing a few lines of code; its goal is to get you familiar with our `index.ts` file.
 
-`index.ts`
+`index.ts` is like the `main()` method in Java or C++; it's the central command hub for our application. Take some time to read through the provided code and comments to understand what it's doing. Then, complete the task given by the line with a `TODO` comment above it. 
 
-## Task 2: Routing Users
+## Task 2: Build Your Routes
 
 `UserRouter.ts`
 
